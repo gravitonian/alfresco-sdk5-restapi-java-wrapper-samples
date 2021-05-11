@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- Alfresco Java SDK 5 Parent -->
+    <parent>
+        <groupId>org.alfresco</groupId>
+        <artifactId>alfresco-java-sdk</artifactId>
+        <version>5.0.0</version>
+    </parent>
+
+    <groupId>org.alfresco.tutorial</groupId>
+    <artifactId>rest-api</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>rest-api</name>
+    <description>Demo showing use of Alfresco SDK 5 ReST API Java wrapper</description>
+
+    <properties>
+        <java.version>11</java.version>
+    </properties>
+
+    <dependencies>
+        <!-- Alfresco Java SDK 5 Java ReST API wrapper Spring Boot Starter -->
+        <dependency>
+            <groupId>org.alfresco</groupId>
+            <artifactId>alfresco-java-rest-api-spring-boot-starter</artifactId>
+            <version>5.0.0</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
